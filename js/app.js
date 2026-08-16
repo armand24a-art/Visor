@@ -539,6 +539,7 @@
 
   Promise.all([
     cargarEjemplo('data/zonas_mexico.geojson', 'Zonas de México (ejemplo)'),
+    cargarEjemplo('data/Paises_Mundo.geojson', 'Paises del mundo (ejemplo)'),
     cargarEjemplo('data/ciudades_mexico.geojson', 'Ciudades de México (ejemplo)')
   ]).then(function (resultados) {
     if (resultados[0]) zoomACapa(resultados[0]);
