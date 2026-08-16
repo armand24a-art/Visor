@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visor de capas vectoriales</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="header">
+    <h1>Visor de capas vectoriales</h1>
+    <span id="zona-info">Zona: México</span>
+  </header>
+
+  <div id="map"></div>
+
+  <div id="panel-derecha">
+    <div class="panel">
+      <div class="panel-header">
+        <h2>Capas vectoriales</h2>
+        <button class="btn-min" data-panel="panel-capas" title="Minimizar/maximizar">&#8211;</button>
+      </div>
+      <div class="panel-body" id="panel-capas">
+        <button class="btn-cargar" id="btn-cargar">
+          <span>&#10133;</span> Cargar capa (GeoJSON / Shapefile)
+        </button>
+        <input type="file" id="input-archivo" accept=".geojson,.json,.shp,.zip" multiple hidden>
+        <div id="lista-capas">
+          <p class="aviso">Aún no hay capas cargadas. Carga un archivo o usa las capas de ejemplo.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <h2>Mapas base</h2>
+        <button class="btn-min" data-panel="panel-mapa" title="Minimizar/maximizar">&#8211;</button>
+      </div>
+      <div class="panel-body" id="panel-mapa">
+        <label class="radio-map">
+          <input type="radio" name="basemap" value="osm" checked>
+          <span class="thumb" style="background-image:url('https://a.tile.openstreetmap.org/7/55/45.png')"></span>
+          <span class="txt">OpenStreetMap</span>
+        </label>
+        <label class="radio-map">
+          <input type="radio" name="basemap" value="google">
+          <span class="thumb" style="background-image:url('https://mt1.google.com/vt/lyrs=s&x=55&y=45&z=7')"></span>
+          <span class="txt">Google Earth</span>
+        </label>
+        <label class="radio-map">
+          <input type="radio" name="basemap" value="topo">
+          <span class="thumb" style="background-image:url('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/7/45/55.png')"></span>
+          <span class="txt">Topográfica</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div id="leyenda" class="panel">
+    <div class="panel-header">
+      <h2>Leyenda</h2>
+    </div>
+    <div class="panel-body" id="cuerpo-leyenda">
+      <p class="aviso">Sin capas visibles.</p>
+    </div>
+  </div>
+
+  <div id="barra-estado">
+    <span id="coord-pos">--, --</span>
+    <span id="zoom-actual">Zoom: 6</span>
+    <span id="n-capas">0 capa(s)</span>
+  </div>
+
+  <div id="modal-cargando" class="oculto">
+    <div class="spinner"></div>
+    <p>Procesando capa...</p>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/shpjs@4.0.4/dist/shp.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

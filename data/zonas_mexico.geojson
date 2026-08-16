@@ -1,0 +1,134 @@
+{
+  "type": "FeatureCollection",
+  "name": "zonas_mexico",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Región Occidente (Jalisco)",
+        "poblacion_hab": 8342151,
+        "area_km2": 78588,
+        "elevacion_msnm": 1566,
+        "precipitacion_mm": 812,
+        "pib_usd": 224,
+        "sequia_indice": 2.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-105.7, 22.5], [-105.5, 21.0], [-104.6, 19.3], [-103.2, 18.9], [-101.6, 20.0], [-101.8, 21.6], [-103.0, 22.3], [-104.7, 22.6], [-105.7, 22.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Región Bajío (Guanajuato)",
+        "poblacion_hab": 6166934,
+        "area_km2": 30608,
+        "elevacion_msnm": 2015,
+        "precipitacion_mm": 620,
+        "pib_usd": 178,
+        "sequia_indice": 3.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-102.1, 21.9], [-101.9, 20.0], [-100.5, 20.1], [-100.6, 21.5], [-101.4, 21.9], [-102.1, 21.9]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Región Occidente Sur (Michoacán)",
+        "poblacion_hab": 4748846,
+        "area_km2": 58643,
+        "elevacion_msnm": 1640,
+        "precipitacion_mm": 980,
+        "pib_usd": 118,
+        "sequia_indice": 1.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-102.9, 20.0], [-103.2, 18.3], [-102.6, 17.9], [-101.9, 18.2], [-100.7, 19.0], [-100.6, 20.3], [-102.1, 20.2], [-102.9, 20.0]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Región Centro (Estado de México)",
+        "poblacion_hab": 16992418,
+        "area_km2": 22351,
+        "elevacion_msnm": 2600,
+        "precipitacion_mm": 850,
+        "pib_usd": 520,
+        "sequia_indice": 2.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-99.8, 20.3], [-98.9, 19.9], [-99.1, 18.9], [-100.3, 18.9], [-100.5, 20.0], [-99.8, 20.3]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Ciudad de México",
+        "poblacion_hab": 9209944,
+        "area_km2": 1495,
+        "elevacion_msnm": 2240,
+        "precipitacion_mm": 700,
+        "pib_usd": 3200,
+        "sequia_indice": 2.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-99.36, 19.59], [-98.94, 19.30], [-98.96, 19.05], [-99.30, 19.05], [-99.37, 19.26], [-99.36, 19.59]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Región Sureste (Chiapas)",
+        "poblacion_hab": 5543022,
+        "area_km2": 73289,
+        "elevacion_msnm": 480,
+        "precipitacion_mm": 2100,
+        "pib_usd": 92,
+        "sequia_indice": 0.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-93.5, 17.9], [-92.3, 14.9], [-92.6, 14.6], [-91.2, 16.1], [-92.1, 17.5], [-93.0, 17.8], [-93.5, 17.9]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Península Norte (Yucatán)",
+        "poblacion_hab": 2320898,
+        "area_km2": 39524,
+        "elevacion_msnm": 30,
+        "precipitacion_mm": 1100,
+        "pib_usd": 95,
+        "sequia_indice": 1.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-87.5, 21.6], [-87.5, 20.4], [-88.3, 19.9], [-90.4, 20.2], [-90.1, 21.4], [-87.5, 21.6]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Península Este (Quintana Roo)",
+        "poblacion_hab": 1862751,
+        "area_km2": 42361,
+        "elevacion_msnm": 25,
+        "precipitacion_mm": 1400,
+        "pib_usd": 88,
+        "sequia_indice": 0.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-86.8, 21.6], [-88.3, 18.5], [-88.9, 18.3], [-88.9, 20.4], [-87.6, 21.2], [-86.8, 21.6]]]
+      }
+    }
+  ]
+}
